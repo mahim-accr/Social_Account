@@ -118,6 +118,9 @@
   }
   .icon-fb { background: linear-gradient(135deg, #1877F2, #0a5bc4); }
   .icon-ig { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+  .icon-gmail { background: linear-gradient(135deg, #EA4335, #FBBC05, #34A853, #4285F4); }
+  .icon-threads { background: #000000; }
+  .icon-github { background: linear-gradient(135deg, #333333, #000000); }
   .icon-wa { background: linear-gradient(135deg, #25D366, #128C7E); }
   .icon-phone { background: linear-gradient(135deg, #3a3a3a, #222); border: 1px solid rgba(201,168,76,0.25); }
   .icon-gmail { background: linear-gradient(135deg, #EA4335, #c5221f); }
@@ -252,7 +255,7 @@
   /* QR Cards row */
   .qr-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px; width: 100%; max-width: 900px;
     margin-bottom: 16px;
     animation: slideUp 0.8s ease 0.5s both;
@@ -288,6 +291,23 @@
     font-size: 11px; color: var(--text-muted);
     display: flex; align-items: center; gap: 5px;
   }
+  .visit-btn {
+    margin-top: 4px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(201,168,76,0.4);
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .visit-btn:hover {
+    background: var(--gold);
+    color: var(--dark3, #111);
+  }
 
   .footer {
     margin-top: 60px; text-align: center;
@@ -322,5 +342,5 @@
     .header h1 { font-size: 48px; }
   }
   @media (max-width: 900px) and (min-width: 651px) {
-    .qr-grid { grid-template-columns: repeat(3, 1fr); }
+    .qr-grid { grid-template-columns: repeat(2, 1fr); }
   }
